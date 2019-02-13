@@ -1,13 +1,12 @@
 function simulate() {
     var num = document.getElementById("num").value;
-	var sim = document.getElementById("sim").value;
-	var divv = document.getElementById("result");
-	var w1=0, w2=0, w3=0, st=0, con=0;
+    var sim = document.getElementById("sim").value;
+    var divv = document.getElementById("result");
+    var w1=0, w2=0, w3=0, st=0, con=0;
     for (let i=0; i<sim; i++)
     {
 		var result=[];
 		result.fill(10000, 0, 24);
-		console.log(result);
 
 		for (let i=0; i<23; i++)
 		{
