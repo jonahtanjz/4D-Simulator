@@ -61,37 +61,37 @@ function simulate() {
 		divv.appendChild(para5);
 	
 	
-		for (let i=0; i<23; i++)
-	    {
-		    if (num == result[i])
+	for (let i=0; i<23; i++)
+	{
+	    if (num == result[i])
+      	    {
+		    if (i==0)
 		    {
-			    if (i==0)
-			    {
-			    	w1++;
-		    	}
-		    	else if (i == 1)
-			    {
-		    		w2++;
-		    	}		
-		       	else if (i == 2)
-			    {
-			    	w3++;
-			    }
-			    else if (i < 13)
-		    	{
-			    	st++;
-			    }
-			    else
-			    {
-			    	con++;
-			    }
+		    	w1++;
+		    }
+	            else if (i == 1)
+		    {
+	    		w2++;
+		    }		
+	            else if (i == 2)
+		    {
+		    	w3++;
+		    }
+	            else if (i < 13)
+		    {
+		    	st++;
+		    }
+		    else
+		    {
+		    	con++;
 		    }
 	    }
+	}
 	    
     }
     
-    let para6 = document.createElement("p");
-		para6.appendChild(document.createTextNode("1ST: " + w1 + "  2ND:  " + w2 + "  3RD:  " + w3 + "  Starter: " + st + "  Consolation: " + con));
-		divv.appendChild(para6);
+	let para6 = document.createElement("p");
+    	para6.appendChild(document.createTextNode("1ST: " + w1 + "  2ND:  " + w2 + "  3RD:  " + w3 + "  Starter: " + st + "  Consolation: " + con));
+	divv.appendChild(para6);
 }
 	
